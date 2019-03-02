@@ -1,6 +1,5 @@
 ---
 - hosts: webservers
-  become: yes
   remote_user: ec2-user
   tasks:
       - name: install httpd
