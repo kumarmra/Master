@@ -25,8 +25,8 @@ pipeline{
 			}
 			stage('Git clone'){
 			  steps{
-			     sh 'cd /home/ec2-user/workspace/ansible-pipe-linejob'
-			     sh 'git clone https://github.com/selvakann/document.git'
+			     sh 'cd /home/ec2-user/workspace/ansible-pipe-line-job'
+			     sh 'git clone https://github.com/kumarmra/Master.git'
 		            
 			  }
 			}
@@ -38,7 +38,7 @@ pipeline{
 			}
 		stage('Ansible playbook'){
 			  steps{
-			      sh 'cd /home/ec2-user/workspace/ansible-pipe-linejob/document/ && ansible-playbook test.yml -b -vvv'
+			      sh 'cd /home/ec2-user/workspace/ansible-pipe-line-job/document/ && ansible-playbook test.yml -b -vvv'
 			     
 			  }
 			}
