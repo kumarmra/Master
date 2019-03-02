@@ -38,7 +38,7 @@ pipeline{
 			}
 		stage('Ansible playbook'){
 			  steps{
-			      sh 'cd /home/ec2-user/workspace/ansible-pipe-line-job/document/ && ansible-playbook test.yml -b -vvv'
+			      sh 'cd /home/ec2-user/workspace/ansible-pipe-line-job/ && ansible-playbook test.yml -b -vvv'
 			     
 			  }
 			}
